@@ -1,0 +1,29 @@
+header{
+    border:1px solid red;
+}
+header .common-frame{
+    border:1px solid blue;
+}
+.header-top{
+    border:4px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top>*{
+    border:1px solid gold;
+    flex:1;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.sns{
+    display: flex;
+    gap:var(--space-normal);
+}
+.lnb{
+    display: flex;
+    gap:var(--space-normal);
+    justify-content: flex-end;
+}
