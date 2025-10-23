@@ -34,8 +34,14 @@
 
     /* semantic color */
     --color-inacitve:#777;
+
+    /* device width */
+    --device-tab : 1440px;
+    --device-mobile : 786px;
+
 }
 html{
+    font-size:var(--basic-font-pc);
     font-family: 'Pretendard',sans-serif;
     line-height: var(--base-line-height);
 }
@@ -71,4 +77,55 @@ p{
 .common-frame{
     width:1440px;
     margin:0 auto;
+}
+.logo img{height:5rem;}
+.btn-all-menu img{height:1.2rem;}
+
+.slider-container {
+  overflow-x: auto;
+  /* 슬라이드처럼 멈춤 */
+  /* scroll-snap-type: x mandatory;  */
+  -webkit-overflow-scrolling: touch; /* iOS 부드러운 스크롤 */
+  white-space: nowrap;
+  display: flex;
+}
+
+.slider-track {
+  display: flex;
+}
+
+/* 웹킷 계열의 브라우저 -> 크롬 엣지 사파리 */
+::-webkit-scrollbar{
+    width:0.25rem;
+    height:0.25rem;
+}
+
+::-webkit-scrollbar-track{
+    background:var(--bloody-red-100);
+    /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--bloody-red-300);
+    /* border-radius: 5px; */
+}
+
+@media (max-width:1440px){
+    html{
+        font-size: var(--basic-font-tab);
+    }
+    .common-frame{
+        width:auto;
+        margin:0 2rem;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size:var(--basic-font-mobile);
+    }
+    .common-frame{
+        width:auto;
+        margin:0 1rem;
+    }
 }
