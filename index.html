@@ -30,10 +30,18 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/system.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style-pc.css">
+    <link rel="stylesheet" href="./css/style-tab-1440.css">
+    <link rel="stylesheet" href="./css/style-tab-1024.css">
+    <link rel="stylesheet" href="./css/style-mobile-768.css">
 
     <!-- scrollbar -->
     <script src="./js/scrollbar.js"></script>
     <script src="./js/header.js"></script>
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="pc">
@@ -201,6 +209,49 @@
             </ul>
         </div>
     </div>
-   
+    <main>
+        <div class="swiper hero-banner-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="pc-slide" src="./img/slide1-pc.jpg" alt="프리미엄 브런치 메뉴 오전 7:30~ 11:30까지 오픈 - 팬케익,아보카도 토스트,그릭 요거트">
+                    <img src="./img/slide1-tab.jpg" alt="프리미엄 브런치 메뉴 오전 7:30~ 11:30까지 오픈 - 팬케익,아보카도 토스트,그릭 요거트" class="tab-slide">
+                    <img src="./img/slide1-mobile.jpg" alt="프리미엄 브런치 메뉴 오전 7:30~ 11:30까지 오픈 - 팬케익,아보카도 토스트,그릭 요거트" class="mobile-slide">
+                </div>
+                <div class="swiper-slide">
+                    <img class="pc-slide" src="./img/slide2-pc.jpg" alt="무화과의 깊은 풍미 신선한 무화과와 부드러운 크림의 조화 - 가을 한정 메뉴 타르트">
+                    <img src="./img/slide2-tab.jpg" alt="무화과의 깊은 풍미 신선한 무화과와 부드러운 크림의 조화 - 가을 한정 메뉴 타르트" class="tab-slide">
+                    <img src="./img/slide2-mobile.jpg" alt="무화과의 깊은 풍미 신선한 무화과와 부드러운 크림의 조화 - 가을 한정 메뉴 타르트" class="mobile-slide">
+                </div>
+                <div class="swiper-slide">
+                    <img class="pc-slide" src="./img/slide3-pc.jpg" alt="더티 초코 케익 맛을 보세요!">
+                    <img src="./img/slide3-tab.jpg" alt="더티 초코 케익 맛을 보세요!" class="tab-slide">
+                    <img src="./img/slide3-mobile.jpg" alt="더티 초코 케익 맛을 보세요!" class="mobile-slide">
+                </div>    
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+            const heroBannerSlider = new Swiper('.hero-banner-slider', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                // autoplay: {
+                //     delay: 3000,
+                //     disableOnInteraction: false,
+                // },
+
+                speed:1000
+                
+            });
+        </script>
+    </main>
+    
 </body>
 </html>

@@ -1,0 +1,5 @@
+@media (max-width:1024px){
+  .pc-slide{display: none;}
+  .mobile-slide{display: none;}
+  .tab-slide{display: block;}
+}
