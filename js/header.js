@@ -39,6 +39,14 @@ document.addEventListener("DOMContentLoaded",()=>{
         lastScrollTop = scrollTop
     })   
 
+    let gnb = document.querySelector(".gnb")
+    gnb.addEventListener("mouseenter",()=>{
+        header.classList.remove("fold")
+    })
+    header.addEventListener("mouseleave",()=>{
+        header.classList.add("fold")
+    })
+
 
 
 

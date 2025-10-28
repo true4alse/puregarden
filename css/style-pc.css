@@ -43,4 +43,29 @@ main{
 header.fold~main{
   margin-top:44px;
 }
+.signature-slider{
+  width:100%;
+}
+.signature{
+  padding:var(--space-3x-large,6rem) 0;
+}
+.signature>h1{
+  text-align: center;
+  margin-bottom: var(--space-normal);
+}
+.signature>p{
+  text-align: center;
+  margin-bottom: var(--space-2x-large);
+}
+.sig-item img{
+  width:100%;
+  aspect-ratio: 1/1;
+}
+.sig-item figure{
+  margin-bottom: var(--space-x-large);
+}
+.sig-item h4{
+  margin-bottom: var(--space-x-small);
+}
+
 

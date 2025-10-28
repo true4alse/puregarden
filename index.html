@@ -242,15 +242,79 @@
                     clickable: true,
                 },
 
-                // autoplay: {
-                //     delay: 3000,
-                //     disableOnInteraction: false,
-                // },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
 
                 speed:1000
                 
             });
         </script>
+        <div class="common-frame signature">
+            <h1>Signature Selection</h1>
+            <p>PUREGARDEN이 자부하는 대표 메뉴. 깊은 풍미와 우아한 디테일로 완성된 시그니처 컬렉션을 경험하세요.</p>
+            <div class="swiper signature-slider">
+                <ul class="signature-items swiper-wrapper">
+                    <li class="sig-item swiper-slide">
+                        <a href="#">
+                            <figure>
+                                <img src="./img/sig1.jpg" alt="Rouge Noir Croissant 섬네일 이미지">
+                            </figure>
+                            <h4>Rouge Noir Croissant</h4>
+                            <p>버터의 깊은 풍미와 진한 다크 초콜릿 가나슈를 가득 채운 크루아상. 블러디 레드의 크랜베리 글레이즈로 마무리한 PUREGARDEN만의 대표 메뉴.</p>
+                        </a>
+                    </li>
+                    <li class="sig-item swiper-slide">
+                        <a href="#">
+                            <figure>
+                                <img src="./img/sig2.jpg" alt="Velvet Berry Tart 섬네일 이미지">
+                            </figure>
+                            <h4>Velvet Berry Tart</h4>
+                            <p>진한 바닐라 크림 위에 라즈베리와 블랙베리를 올린 타르트. 부드러운 텍스처와 산뜻한 풍미가 조화를 이루는 프리미엄 디저트.</p>
+                        </a>
+                    </li>
+                    <li class="sig-item swiper-slide">
+                        <a href="#">
+                            <figure>
+                                <img src="./img/sig3.jpg" alt="Château Éclair 섬네일 이미지">
+                            </figure>
+                            <h4>Château Éclair</h4>
+                            <p>프랑스산 다크 초콜릿과 마다가스카르 바닐라 빈을 사용한 에클레어. 클래식하면서도 세련된 감각으로 완성된 시그니처 셀렉션.</p>
+                        </a>
+                    </li>
+                    <li class="sig-item swiper-slide">
+                        <a href="#">
+                            <figure>
+                                <img src="./img/sig4.jpg" alt="Crimson Garden Loaf 섬네일 이미지">
+                            </figure>
+                            <h4>Crimson Garden Loaf</h4>
+                            <p>레드 와인에 숙성한 무화과와 호두가 어우러진 고급 로프 브레드. 은은한 와인의 향과 고소한 견과류가 어울려 특별한 여운을 남깁니다.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                const signatureSlider = new Swiper('.signature-slider', {
+                // Optional parameters
+                    direction: 'horizontal',
+                    loop: true,
+                    slidesPerView: 1.2,
+                    spaceBetween: 14,
+                    breakpoints: {
+                        768: {
+                        // 화면 너비가 768픽셀 이상인 경우
+                        slidesPerView: 3.2,
+                        spaceBetween: 18,
+                        },
+                        1440: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                        },
+                    },
+                });
+            </script>
+        </div>
     </main>
     
 </body>

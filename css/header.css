@@ -97,6 +97,11 @@ header a:hover{color:var(--bloody-red-main-700)}
     .header-smart{
         display: block;
         background-color: #fff;
+        position: fixed;
+        width:100%;
+        left:0;
+        top:0;
+        z-index: 10000;
     }
     .header-smart .common-frame{
         display: flex;
@@ -127,6 +132,7 @@ header a:hover{color:var(--bloody-red-main-700)}
         justify-content: space-between;
         transform: translateX(-100%);
         transition: all 0.7s ease 0s;
+        z-index: 20000;
     }
     .hidden-gnb.on{
         transform: translateX(0%);

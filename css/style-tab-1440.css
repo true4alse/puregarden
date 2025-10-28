@@ -1,3 +1,9 @@
 @media (max-width:1440px){
-  
+    main{
+        margin-top: 94px;
+    }
+    header.fold~main{
+        margin-top:94px;
+    }
+
 }
