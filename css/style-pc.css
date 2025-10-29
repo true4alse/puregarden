@@ -67,5 +67,16 @@ header.fold~main{
 .sig-item h4{
   margin-bottom: var(--space-x-small);
 }
-
+.banner-cake{
+  height:400px;
+  background: url("../img/banner.cake.jpg") no-repeat 50% 50% / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  text-align: center;
+}
+.banner-cake h1{
+  margin-bottom: 0.5rem;
+}
 
