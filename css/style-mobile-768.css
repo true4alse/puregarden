@@ -13,4 +13,22 @@
   header.fold~main{
       margin-top:74px;
   }
+  .banner-cake{
+        height:582px;
+  }
+  .off-store{
+    flex-direction: column;
+    gap:var(--space-2x-large);
+  }
+  .off-store figure{
+      width:auto;
+      flex-shrink: 0;
+      aspect-ratio: 365/218;
+  }
+  .off-store section{
+    text-align: center;
+  }
+  .off-store h1{
+    padding-top: 0;
+  }
 }

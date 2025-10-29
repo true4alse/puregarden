@@ -1,3 +1,9 @@
+@media (min-width:1920px){
+  body{
+    max-width: 1920px;
+    margin:0 auto;
+  }
+}
 .hero-banner-slider{
   width: 100%;
 }
@@ -75,8 +81,30 @@ header.fold~main{
   align-items: center;
   color:#fff;
   text-align: center;
+  margin-bottom: var(--space-3x-large);
 }
 .banner-cake h1{
   margin-bottom: 0.5rem;
 }
+.off-store{
+  display: flex;
+  gap:var(--space-normal);
+  justify-content: space-between;
+}
+.off-store h1{
+  padding-top: 4.8rem;
+  margin-bottom: var(--space-normal);
+}
+.off-store h3{
+  margin-bottom: var(--space-2x-large);
+}
+.off-store p{
+  margin-bottom: var(--space-3x-large);
+}
+.off-store figure{
+  width:832px;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
 

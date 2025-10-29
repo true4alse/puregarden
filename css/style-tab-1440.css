@@ -5,5 +5,19 @@
     header.fold~main{
         margin-top:94px;
     }
+    .banner-cake{
+        height:360px;
+    }
+    .off-store figure{
+        width:40%;
+        flex-shrink: 0;
+        aspect-ratio: 386/515;
+    }
+    .off-store figure img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
 
 }
