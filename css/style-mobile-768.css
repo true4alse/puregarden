@@ -31,4 +31,30 @@
   .off-store h1{
     padding-top: 0;
   }
+  .news{
+    flex-direction: column;
+    gap:var(--space-x-large)
+  }
+  .news-list li a{
+    font-weight: var(--font-strong);
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .news-title{
+    text-align: center;
+  }
+  .benefit{
+    flex-direction: column-reverse;
+    gap: var(--space-x-large);
+  }
+  .benefit-txt{
+    text-align: center;
+  }
+  .banner-benefit{
+    height:80vh;
+  }
+
+  /* 이 선을 넘지 말자.^^.. */
 }

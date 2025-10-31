@@ -106,5 +106,73 @@ header.fold~main{
   flex-shrink: 0;
   line-height: 0;
 }
+.news{
+  margin-top: var(--space-3x-large);
+  display: flex;
+  gap:var(--space-normal);
+}
+.news-title{
+  flex:5;
+}
+.news-list{
+  flex:7;
+}
+.news-title h1{
+  margin-bottom: var(--space-normal);
+}
+.news-list{
+  border-top: 2px solid var(--bloody-red-main-700);
+}
+.news-list li{
+  border-bottom:1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  padding:1.5rem 0;
+}
+.news-list li a{
+  font-weight: var(--font-strong);
+  max-width: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.benefit{
+  display: flex;
+  gap:var(--space-normal);
+  margin-top: var(--space-3x-large);
+}
+.benefit-img{
+  flex:1;
+}
+.benefit-img img{
+  width:100%;
+}
+.benefit-txt{
+  flex:1;
+}
+.benefit-txt h1{
+  padding-top: var(--space-x-large);
+  margin-bottom: var(--space-normal);
+}
+.benefit-txt p{
+  margin-bottom: var(--space-3x-large);
+}
+.banner-benefit{
+  height:500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/banner.cake.jpg") no-repeat 50% 50% / cover;
+  text-align: center;
+  margin-top: var(--space-3x-large);
+}
+.banner-benefit h1{
+  margin-bottom: var(--space-normal);
+  color:#fff;
+}
+.banner-benefit p{
+  margin-bottom: var(--space-2x-large);
+  color:#fff;
+}
 
 
