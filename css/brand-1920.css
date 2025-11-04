@@ -1,0 +1,70 @@
+.brand-banner{
+    padding-top: var(--space-3x-large);
+    display: flex;
+    gap:var(--space-normal);
+    justify-content: space-between;
+}
+.brand-txt{
+    /* flex:6; */
+    flex-basis: 51%;
+}
+.brand-img{
+    /* flex:5; */
+    flex-basis: 40%;
+}
+.brand-txt h1{
+    font-size:90px;
+    line-height: 0.9;
+    font-weight: var(--font-normal);
+}
+.brand-txt h2{
+    margin:var(--space-2x-large) 0;
+}
+.brand-txt h2+p{
+    margin-bottom: var(--space-x-small);
+}
+.story{
+    padding:var(--space-3x-large) 0;
+}
+.story h3{
+    text-align: center;
+    margin-bottom: var(--space-normal);
+}
+.story>p{
+    text-align: center;
+    margin-bottom: var(--space-2x-large);
+}
+.story section{
+    margin-bottom: var(--space-2x-large);
+    display: flex;
+    gap: var(--space-normal);
+}
+.story section:last-of-type{
+    margin-bottom: 0;
+}
+.story section figure{
+    flex:710;
+}
+.story section figure img{
+    width:100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.txt-story{
+    flex:588;
+    padding-left: 4rem;
+    padding-top: 5rem;
+}
+.story-2{
+    flex-direction: row-reverse;
+}
+.story-2 .txt-story{
+    padding-left: 0;
+    padding-right: 4rem;
+}
+.txt-story h4{
+    margin-bottom: var(--space-x-large);
+}
+.txt-story h4+p{
+    margin-bottom: var(--space-x-small);
+}

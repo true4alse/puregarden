@@ -1,0 +1,23 @@
+@media (max-width:768px){
+    .brand-banner{
+        flex-direction: column;
+        text-align: center;
+        gap:var(--space-x-large);
+    }
+    .brand-banner h1{
+        font-size:45px;
+    }
+    .brand-img img{
+        width:100%;
+        aspect-ratio: 365/300;
+        object-fit: cover;
+    }
+    .story section{
+        flex-direction: column;
+    }
+    .txt-story{
+        padding-top: 0;
+    }
+
+    /* 넘지마시오.. */
+}

@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded",()=>{
 
     // 슬라이드 컨테이너 요소 선택
-    const slider = document.querySelector('.slider-container');
-    
-    // 드래그 상태 추적용 변수들
+    const slider = document.querySelectorAll('.slider-container');
+    slider.forEach(slider=>{
+        // 드래그 상태 추적용 변수들
     let isDown = false;    // 마우스 버튼이 눌린 상태인지 여부
     let startX;            // 드래그 시작 시 마우스 X 좌표
     let scrollLeft;        // 드래그 시작 시의 컨테이너의 스크롤 위치
@@ -43,5 +43,8 @@ document.addEventListener("DOMContentLoaded",()=>{
         // 시작 시점에서 드래그 방향에 따라 스크롤 이동
         slider.scrollLeft = scrollLeft - walk;
     });
+    })
+    
+    
 
 })

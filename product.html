@@ -25,29 +25,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
     
-    <!-- 스타일 -->
+    <!-- 공통 스타일 -->
     <link rel="stylesheet" href="./css/font.css?v=1">
     <link rel="stylesheet" href="./css/reset.css?v=1">
     <link rel="stylesheet" href="./css/system.css?v=1">
     <link rel="stylesheet" href="./css/component.css?v=1">
     <link rel="stylesheet" href="./css/header.css?v=1">
     <link rel="stylesheet" href="./css/footer.css?v=1">
-    <!-- 헤더랑 푸터랑 헤드를 포함시켜주는 파일 -->
-    <!-- <script src="./js/include.js"></script> -->
     
-    <link rel="stylesheet" href="./css/style-pc.css?v=1">
-    <link rel="stylesheet" href="./css/style-tab-1440.css?v=1">
-    <link rel="stylesheet" href="./css/style-tab-1024.css?v=1">
-    <link rel="stylesheet" href="./css/style-mobile-768.css?v=1">
-    
-
     <!-- scrollbar -->
-    <!-- <script src="./js/scrollbar.js"></script>
-    <script src="./js/header.js"></script> -->
+    <script src="./js/scrollbar.js"></script>
+    <script src="./js/header.js"></script>
 
     <!-- swiper js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- 개별 스타일 -->
+    <link rel="stylesheet" href="./css/product-1920.css">
+    <link rel="stylesheet" href="./css/product-1440.css">
+    <link rel="stylesheet" href="./css/product-768.css">
 </head>
 <body>
     <header class="pc">
@@ -215,174 +212,116 @@
             </ul>
         </div>
     </div>
-     <main>
-        <div class="swiper hero-banner-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="pc-slide" src="./img/slide1-pc.jpg" alt="프리미엄 브런치 메뉴 오전 7:30~ 11:30까지 오픈 - 팬케익,아보카도 토스트,그릭 요거트">
-                    <img src="./img/slide1-tab.jpg" alt="프리미엄 브런치 메뉴 오전 7:30~ 11:30까지 오픈 - 팬케익,아보카도 토스트,그릭 요거트" class="tab-slide">
-                    <img src="./img/slide1-mobile.jpg" alt="프리미엄 브런치 메뉴 오전 7:30~ 11:30까지 오픈 - 팬케익,아보카도 토스트,그릭 요거트" class="mobile-slide">
-                </div>
-                <div class="swiper-slide">
-                    <img class="pc-slide" src="./img/slide2-pc.jpg" alt="무화과의 깊은 풍미 신선한 무화과와 부드러운 크림의 조화 - 가을 한정 메뉴 타르트">
-                    <img src="./img/slide2-tab.jpg" alt="무화과의 깊은 풍미 신선한 무화과와 부드러운 크림의 조화 - 가을 한정 메뉴 타르트" class="tab-slide">
-                    <img src="./img/slide2-mobile.jpg" alt="무화과의 깊은 풍미 신선한 무화과와 부드러운 크림의 조화 - 가을 한정 메뉴 타르트" class="mobile-slide">
-                </div>
-                <div class="swiper-slide">
-                    <img class="pc-slide" src="./img/slide3-pc.jpg" alt="더티 초코 케익 맛을 보세요!">
-                    <img src="./img/slide3-tab.jpg" alt="더티 초코 케익 맛을 보세요!" class="tab-slide">
-                    <img src="./img/slide3-mobile.jpg" alt="더티 초코 케익 맛을 보세요!" class="mobile-slide">
-                </div>    
+    <main>
+        <!-- 제품 컨텐츠 -->
+        <div class="banner-product">
+            <div class="common-frame">
+                <h1>정성이 만든 한 조각의 예술</h1>
+                <p>A piece of art, crafted with devotion.</p>
             </div>
-            <div class="swiper-pagination"></div>
         </div>
-        <script>
-            const heroBannerSlider = new Swiper('.hero-banner-slider', {
-                // Optional parameters
-                direction: 'horizontal',
-                loop: true,
-
-                // If we need pagination
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-
-                speed:1000
-                
-            });
-        </script>
-        <div class="common-frame signature">
-            <h1>Signature Selection</h1>
-            <p>PUREGARDEN이 자부하는 대표 메뉴. 깊은 풍미와 우아한 디테일로 완성된 시그니처 컬렉션을 경험하세요.</p>
-            <div class="swiper signature-slider">
-                <ul class="signature-items swiper-wrapper">
-                    <li class="sig-item swiper-slide">
-                        <a href="#">
-                            <figure>
-                                <img src="./img/sig1.jpg" alt="Rouge Noir Croissant 섬네일 이미지">
-                            </figure>
-                            <h4>Rouge Noir Croissant</h4>
-                            <p>버터의 깊은 풍미와 진한 다크 초콜릿 가나슈를 가득 채운 크루아상. 블러디 레드의 크랜베리 글레이즈로 마무리한 PUREGARDEN만의 대표 메뉴.</p>
-                        </a>
-                    </li>
-                    <li class="sig-item swiper-slide">
-                        <a href="#">
-                            <figure>
-                                <img src="./img/sig2.jpg" alt="Velvet Berry Tart 섬네일 이미지">
-                            </figure>
-                            <h4>Velvet Berry Tart</h4>
-                            <p>진한 바닐라 크림 위에 라즈베리와 블랙베리를 올린 타르트. 부드러운 텍스처와 산뜻한 풍미가 조화를 이루는 프리미엄 디저트.</p>
-                        </a>
-                    </li>
-                    <li class="sig-item swiper-slide">
-                        <a href="#">
-                            <figure>
-                                <img src="./img/sig3.jpg" alt="Château Éclair 섬네일 이미지">
-                            </figure>
-                            <h4>Château Éclair</h4>
-                            <p>프랑스산 다크 초콜릿과 마다가스카르 바닐라 빈을 사용한 에클레어. 클래식하면서도 세련된 감각으로 완성된 시그니처 셀렉션.</p>
-                        </a>
-                    </li>
-                    <li class="sig-item swiper-slide">
-                        <a href="#">
-                            <figure>
-                                <img src="./img/sig4.jpg" alt="Crimson Garden Loaf 섬네일 이미지">
-                            </figure>
-                            <h4>Crimson Garden Loaf</h4>
-                            <p>레드 와인에 숙성한 무화과와 호두가 어우러진 고급 로프 브레드. 은은한 와인의 향과 고소한 견과류가 어울려 특별한 여운을 남깁니다.</p>
-                        </a>
-                    </li>
+        <div class="product common-frame">
+            <h1>New Arrivals</h1>
+            <p>매일 새로운 즐거움, PUREGARDEN이 준비한 특별한 빵을 만나보세요. 지금 가장 신선한 순간을 경험해보실 수 있습니다.</p>
+            <div class="slider-container">
+                <ul class="category-product">
+                    <li class="on"><a href="#">NEW</a></li>
+                    <li><a href="#">PURE BREAD</a></li>
+                    <li><a href="#">PURE CAKE</a></li>
+                    <li><a href="#">PURE DELI</a></li>
+                    <li><a href="#">DESERT & SNACK</a></li>
+                    <li><a href="#">PRESENT.P</a></li>
+                    <li><a href="#">BEVERAGE.P</a></li>
                 </ul>
             </div>
-            <script>
-                const signatureSlider = new Swiper('.signature-slider', {
-                // Optional parameters
-                    direction: 'horizontal',
-                    loop: true,
-                    slidesPerView: 1.2,
-                    spaceBetween: 14,
-                    breakpoints: {
-                        768: {
-                        // 화면 너비가 768픽셀 이상인 경우
-                        slidesPerView: 3.2,
-                        spaceBetween: 18,
-                        },
-                        1440: {
-                        slidesPerView: 4,
-                        spaceBetween: 20,
-                        },
-                    },
-                });
-            </script>
-        </div>
-        <div class="banner-cake">
-            <div class="common-frame">
-                <h1>Premium Bakery, Now Online</h1>
-                <p>매장에서 즐기던 고급 케이크를 온라인 주문으로 간편하게. 신선함 그대로, 품격 있는 맛을 배송합니다.</p>
-            </div>
-        </div>
-        <div class="common-frame off-store">
-            <section>
-                <h1>특별한 하루를 위한 공간, PUREGARDEN</h1>
-                <h3>가까운 PUREGARDEN에서 만나는 고급 베이커리</h3>
-                <p>오프라인 매장에서 더욱 깊이 있는 경험을 누려보세요.
-                케이크와 커피, 그리고 공간의 품격까지 함께합니다.</p>
-                <a href="#" class="btn-1">오프라인매장 찾기</a>
-            </section>
-            <figure>
-                <img src="./img/offstore.jpg" alt="퓨어가든 매장 홀 사진">
-            </figure>
-        </div>
-        <div class="common-frame news">
-            <div class="news-title">
-                <h1>PUREGARDEN 소식 & 안내</h1>
-                <p>PUREGARDEN의 새로운 소식과 중요한 안내를 확인하세요.</p>
-            </div>
-            <ul class="news-list">
+            <!-- <ul class="list-product">
                 <li>
-                <a href="#">[신제품 출시] ‘Rouge Noir Croissant’ 공개 [신제품 출시] ‘Rouge Noir Croissant’ 공개</a>
-                    <span class="date">2025.09.10</span>
+                    <a href="#">
+                        <figure>
+                            <img src="./img/pro-1.jpg" alt="">
+                            <span class="heart"><img src="./img/heart-empty.svg" alt="좋아요 선택안함"></span>
+                        </figure>
+                        <h3>벨벳 라즈베리 타르트</h3>
+                        <h4><em>Velvet Raspberry Tart</em></h4>
+                        <p>상큼한 라즈베리와 부드러운 크림이 조화를 이루는 타르트.깊은 풍미 속에서 달콤함과 산뜻함을 동시에 즐겨보세요.</p>
+                        <p class="price">6,800원</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">[온라인 배송 서비스 확대 안내]</a>
-                    <span class="date">2025.08.25</span>
+                    <a href="#">
+                        <figure>
+                            <img src="./img/pro-1.jpg" alt="">
+                            <span class="heart"><img src="./img/heart-empty.svg" alt="좋아요 선택안함"></span>
+                        </figure>
+                        <h3>벨벳 라즈베리 타르트</h3>
+                        <h4><em>Velvet Raspberry Tart</em></h4>
+                        <p>상큼한 라즈베리와 부드러운 크림이 조화를 이루는 타르트.깊은 풍미 속에서 달콤함과 산뜻함을 동시에 즐겨보세요.</p>
+                        <p class="price">6,800원</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">[추석 시즌 한정 케이크 예약]</a>
-                    <span class="date">2025.08.10</span>
+                    <a href="#">
+                        <figure>
+                            <img src="./img/pro-1.jpg" alt="">
+                            <span class="heart"><img src="./img/heart-empty.svg" alt="좋아요 선택안함"></span>
+                        </figure>
+                        <h3>벨벳 라즈베리 타르트</h3>
+                        <h4><em>Velvet Raspberry Tart</em></h4>
+                        <p>상큼한 라즈베리와 부드러운 크림이 조화를 이루는 타르트.깊은 풍미 속에서 달콤함과 산뜻함을 동시에 즐겨보세요.</p>
+                        <p class="price">6,800원</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">[PUREGARDEN 신규 매장 오픈]</a>
-                    <span class="date">2025.08.05</span>
+                    <a href="#">
+                        <figure>
+                            <img src="./img/pro-1.jpg" alt="">
+                            <span class="heart"><img src="./img/heart-empty.svg" alt="좋아요 선택안함"></span>
+                        </figure>
+                        <h3>벨벳 라즈베리 타르트</h3>
+                        <h4><em>Velvet Raspberry Tart</em></h4>
+                        <p>상큼한 라즈베리와 부드러운 크림이 조화를 이루는 타르트.깊은 풍미 속에서 달콤함과 산뜻함을 동시에 즐겨보세요.</p>
+                        <p class="price">6,800원</p>
+                    </a>
                 </li>
-            </ul>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="./img/pro-1.jpg" alt="">
+                            <span class="heart"><img src="./img/heart-empty.svg" alt="좋아요 선택안함"></span>
+                        </figure>
+                        <h3>벨벳 라즈베리 타르트</h3>
+                        <h4><em>Velvet Raspberry Tart</em></h4>
+                        <p>상큼한 라즈베리와 부드러운 크림이 조화를 이루는 타르트.깊은 풍미 속에서 달콤함과 산뜻함을 동시에 즐겨보세요.</p>
+                        <p class="price">6,800원</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="./img/pro-1.jpg" alt="">
+                            <span class="heart"><img src="./img/heart-empty.svg" alt="좋아요 선택안함"></span>
+                        </figure>
+                        <h3>벨벳 라즈베리 타르트</h3>
+                        <h4><em>Velvet Raspberry Tart</em></h4>
+                        <p>상큼한 라즈베리와 부드러운 크림이 조화를 이루는 타르트.깊은 풍미 속에서 달콤함과 산뜻함을 동시에 즐겨보세요.</p>
+                        <p class="price">6,800원</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="./img/pro-1.jpg" alt="">
+                            <span class="heart"><img src="./img/heart-empty.svg" alt="좋아요 선택안함"></span>
+                        </figure>
+                        <h3>벨벳 라즈베리 타르트</h3>
+                        <h4><em>Velvet Raspberry Tart</em></h4>
+                        <p>상큼한 라즈베리와 부드러운 크림이 조화를 이루는 타르트.깊은 풍미 속에서 달콤함과 산뜻함을 동시에 즐겨보세요.</p>
+                        <p class="price">6,800원</p>
+                    </a>
+                </li>
+            </ul> -->
         </div>
-        <div class="common-frame benefit">
-            <figure class="benefit-img">
-                <img src="./img/banner.card.jpg" alt="퓨어가든 혜택 카드 실사">
-            </figure>
-            <div class="benefit-txt">
-                <h1>당신을 위한 특별한 혜택</h1>
-                <p>PUREGARDEN과 제휴된 카드로 결제 시, 매장에서 더욱 특별한 순간을 합리적인 가격으로 누리실 수 있습니다.</p>
-                <a href="#" class="btn-1">혜택 더 알아보기</a>
-            </div>
-        </div>
-        <div class="banner-benefit">
-            <div class="common-frame">
-                <h1>당신을 위한 특별한 혜택</h1>
-                <p>PUREGARDEN과 제휴된 카드로 결제 시, 매장에서 더욱 특별한 순간을 합리적인 가격으로 누리실 수 있습니다.</p>
-                <a href="#" class="btn-1">혜택 더 알아보기</a>
-            </div>
-        </div>
-
     </main>
-
     <footer>
         <div class="common-frame">
             <section class="ft">
@@ -412,6 +351,5 @@
             <div class="copy">본 페이지는 정현진이 만든 취업 용도의 포트폴리오 홈페이지 입니다.</div>
         </div>
     </footer>
-    
 </body>
 </html>

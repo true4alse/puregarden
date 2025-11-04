@@ -1,9 +1,4 @@
-@media (min-width:1920px){
-  body{
-    max-width: 1920px;
-    margin:0 auto;
-  }
-}
+
 .hero-banner-slider{
   width: 100%;
 }
@@ -40,15 +35,7 @@
 .tab-slide{display: none;}
 .mobile-slide{display: none;}
 
-main{
-  margin-top: 106px;
-  /* header의 높이만큼 여백을 위로 줌 */
-  transition:margin-top 0.6s ease 0s;
-  min-height: 1500px;
-}
-header.fold~main{
-  margin-top:44px;
-}
+
 .signature-slider{
   width:100%;
 }
