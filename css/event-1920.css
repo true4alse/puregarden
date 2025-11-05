@@ -1,0 +1,11 @@
+.banner-product.event{
+    background: url("../img/event-banner.jpg") no-repeat 50% 50% / cover;
+}
+.event-title{
+    margin-top: var(--space-3x-large);
+    margin-bottom: var(--space-2x-large);
+    text-align: center;
+}
+.event-title h1{
+    margin-bottom: var(--space-normal);
+}

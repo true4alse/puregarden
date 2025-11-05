@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded",()=>{
-
+function header(){
     let btnAllMenu = document.querySelector(".btn-all-menu")
     let hiddenGnb = document.querySelector(".hidden-gnb")
     let btnClose = document.querySelector(".btn-close")
@@ -47,8 +46,9 @@ document.addEventListener("DOMContentLoaded",()=>{
         header.classList.add("fold")
     })
 
+}
 
 
 
-})
+
 

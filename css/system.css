@@ -129,6 +129,27 @@ p{
     background:var(--bloody-red-300);
     /* border-radius: 5px; */
 }
+.ln1{
+    display: -webkit-box;          /* 플렉스형 박스(옛 사양) */
+    -webkit-box-orient: vertical;  /* 세로 방향 줄바꿈 기준 */
+    -webkit-line-clamp: 1;         /* 보여줄 최대 줄 수 */
+    overflow: hidden;              /* 넘치는 내용 숨기기 */
+    text-overflow: ellipsis;       /* 말줄임 표기(보조) */
+}
+.ln2{
+    display: -webkit-box;          /* 플렉스형 박스(옛 사양) */
+    -webkit-box-orient: vertical;  /* 세로 방향 줄바꿈 기준 */
+    -webkit-line-clamp: 2;         /* 보여줄 최대 줄 수 */
+    overflow: hidden;              /* 넘치는 내용 숨기기 */
+    text-overflow: ellipsis;       /* 말줄임 표기(보조) */
+}
+.ln3{
+    display: -webkit-box;          /* 플렉스형 박스(옛 사양) */
+    -webkit-box-orient: vertical;  /* 세로 방향 줄바꿈 기준 */
+    -webkit-line-clamp: 3;         /* 보여줄 최대 줄 수 */
+    overflow: hidden;              /* 넘치는 내용 숨기기 */
+    text-overflow: ellipsis;       /* 말줄임 표기(보조) */
+}
 
 @media (max-width:1440px){
     html{

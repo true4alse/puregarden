@@ -1,8 +1,11 @@
 @media (max-width:1440px){
-    .banner-product{
-        height:450px;
-    }
+    
 
+    .list-product{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:var(--space-2x-large) var(--space-normal);
+    }
 
     /* 선을 넘지말자.. */
 }

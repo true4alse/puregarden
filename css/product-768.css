@@ -1,8 +1,16 @@
 @media (max-width:768px){
 
-    .banner-product{
-        height:100vh;
+    
+    .product .slider-container{
+        justify-content: flex-start;
     }
+    .list-product{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:var(--space-2x-large) var(--space-normal);
+    }
+
+
 
 
     /* 선넘지마... */
