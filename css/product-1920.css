@@ -39,3 +39,6 @@
     color:#fff;
     background-color: var(--bloody-red-main-700);
 }
+.product .slider-container{
+    justify-content: center;
+}
