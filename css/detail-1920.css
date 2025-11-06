@@ -1,0 +1,32 @@
+.detail-1{
+    display: flex;
+    gap:var(--space-normal);
+    margin: var(--space-3x-large) auto;
+}
+.detail-1>section{
+    width:50%;
+}
+.thumb-big{
+    width:100%;
+    aspect-ratio: 1/1;
+    line-height: 0;
+    margin-bottom: var(--space-normal);
+}
+.thumb-big img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.thumb-small-list{
+    display: flex;
+    gap:var(--space-normal);
+}
+.thumb-small-list > li{
+    width:140px;
+    height:140px;
+}
+.thumb-small-list > li img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
