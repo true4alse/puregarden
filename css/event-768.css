@@ -1,0 +1,14 @@
+@media (max-width:768px){
+
+    .event-ul{
+        grid-template-columns: repeat(2,minmax(80px,1fr));
+    }
+
+}
+@media (max-width:320px){
+
+    .event-ul{
+        grid-template-columns: repeat(1,minmax(80px,1fr));
+    }
+
+}

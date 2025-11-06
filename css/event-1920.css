@@ -9,3 +9,28 @@
 .event-title h1{
     margin-bottom: var(--space-normal);
 }
+.event-ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:var(--space-2x-large) var(--space-normal);
+}
+.event-ul figure{
+    aspect-ratio: 467/600;  
+    margin-bottom: var(--space-x-large);  
+    overflow: hidden;
+}
+.event-ul figure img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition: all 0.5s ease 0s;
+}
+.event-ul figure img:hover{
+    transform: scale(1.2);
+}
+.event-ul h3{
+    margin-bottom: var(--space-x-small);
+}
+.event-list{
+    margin-bottom: var(--space-3x-large);
+}
