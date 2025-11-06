@@ -1,0 +1,12 @@
+@media (max-width:1440px){
+    .detail-1{
+        margin: 10rem 2rem var(--space-3x-large);
+    }
+    .thumb-small-list > li{
+        width:116px;
+        height:116px;
+    }
+
+
+    /* 선 */
+}

@@ -103,6 +103,7 @@ p{
 
 .slider-container {
   overflow-x: auto;
+  overflow-y: hidden;
   /* 슬라이드처럼 멈춤 */
   /* scroll-snap-type: x mandatory;  */
   -webkit-overflow-scrolling: touch; /* iOS 부드러운 스크롤 */
