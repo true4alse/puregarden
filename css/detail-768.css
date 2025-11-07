@@ -22,5 +22,9 @@
         flex-direction: column;
     }
 
+    .review-track li{
+        width:197px;
+    }
+
     /* line */
 }

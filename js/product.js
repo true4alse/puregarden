@@ -16,7 +16,7 @@ let product = [
         pnameEn:"Golden Butter Brioche",
         pdesc:"은은한 버터 향이 가득한 프리미엄 브리오슈. 결이 살아있는 식감과 부드러움이 입안에 퍼집니다.",
         pprice:60000,
-        pthumbArray:["thb2.jpg","thb3.jpg","thb4.jpg","thb5.jpg","thb6.jpg","thb1.jpg"],
+        pthumbArray:["sma1.jpg","sma2.jpg","thb4.jpg","thb5.jpg","thb6.jpg","thb1.jpg"],
         salePer:30
     },
     {

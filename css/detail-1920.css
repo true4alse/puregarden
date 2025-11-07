@@ -99,7 +99,7 @@
 }
 .detail-2 .title-product{
     margin-bottom: var(--space-2x-large);
-    margin-top: var(--space-3x-large);
+    padding-top: var(--space-3x-large);
 }
 .info-list{
     display: flex;
@@ -135,5 +135,40 @@
     text-align: right;
     margin-bottom: var(--space-x-small);
 }
-
-
+.list-review>li{
+    display: flex;
+    gap:var(--space-normal);
+    border-bottom:1px solid #e0e0e0;
+    padding:var(--space-2x-large) 0;
+}
+.list-review-1{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    gap:var(--space-x-small);
+}
+.list-review-2{
+    width:75%;
+}
+.list-review-2 h4{
+    margin-bottom: var(--space-normal);
+}
+.product .slider-container.review-slider{
+    justify-content: flex-start;
+}
+.review-track{
+    display: flex;
+    gap: var(--space-normal);
+}
+.review-track li{
+    width:416px;
+    aspect-ratio: 1/1;
+}
+.review-track li img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.review-slider{
+    margin-bottom: var(--space-normal);
+}

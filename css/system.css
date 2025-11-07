@@ -60,6 +60,7 @@ html{
     font-size:var(--basic-font-pc);
     font-family: 'Pretendard',sans-serif;
     line-height: var(--base-line-height);
+    scroll-behavior: smooth;
 }
 em{
     font-style: inherit;

@@ -15,6 +15,18 @@
     .info-list .info-list-2{
         flex:8;
     }
+    .list-review>li{
+        flex-direction: column;
+    }
+    .list-review-1{
+        width:auto;
+    }
+    .list-review-2{
+        width:auto;
+    }
+    .review-track li{
+        width:370px;
+    }
 
 
     /* 선 */

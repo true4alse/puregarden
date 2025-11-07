@@ -105,6 +105,7 @@ header a:hover{color:var(--bloody-red-main-700)}
         left:0;
         top:0;
         z-index: 10000;
+        border-bottom: 1px solid var(--bloody-red-600);
     }
     .header-smart .common-frame{
         display: flex;
