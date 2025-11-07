@@ -6,6 +6,15 @@
         width:116px;
         height:116px;
     }
+    .sticky-menu {
+        top: 100px;
+    }
+    .info-list .info-list-1{
+        flex:4;
+    }
+    .info-list .info-list-2{
+        flex:8;
+    }
 
 
     /* 선 */

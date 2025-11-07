@@ -77,5 +77,63 @@
     background-color: var(--bloody-red-600);
     color:#fff;
 }
+.sticky-menu {
+    display: flex;
+    gap: var(--space-normal);
+    margin-bottom: var(--space-2x-large);
+    position: sticky;
+    left: 0;
+    top: 50px;
+    z-index: 5;
+}
+.sticky-menu>li{
+    flex:1;
+    text-align: center;
+}
+.sticky-menu>li a{
+    padding:var(--space-x-small) 0;
+    display: block;
+    border:1px solid #000;
+    font-size: 0.9rem;
+    background-color: #fff;
+}
+.detail-2 .title-product{
+    margin-bottom: var(--space-2x-large);
+    margin-top: var(--space-3x-large);
+}
+.info-list{
+    display: flex;
+    gap:var(--space-normal);
+}
+.info-list>section{
+    flex:1;
+}
+.info-list-1 h3{
+    margin-bottom: var(--space-2x-small);
+}
+.info-list-1 h3+p{
+    margin-bottom: var(--space-normal);
+}
+.info-list-2 table{
+    width:100%;
+}
+.info-list-2 th{
+    border-bottom:1px solid #000;
+    width:50%;
+    text-align: left;
+    padding:var(--space-x-small) 0;
+}
+.info-list-2 td{
+    border-bottom:1px solid #000;
+    width:50%;
+    padding:var(--space-x-small) 0;
+}
+.info-list-2 tr:nth-of-type(1){
+    border-top:4px solid var(--bloody-red-600);
+}
+.info-list-2 caption{
+    text-align: right;
+    margin-bottom: var(--space-x-small);
+}
 
 
